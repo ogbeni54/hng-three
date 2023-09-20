@@ -37,6 +37,7 @@ const Home = () => {
         console.log(user);
       } catch (error) {
         console.error('Login error:', error.code, error.message);
+        formik.setFieldError('password', 'Invalid email or password');
       } finally {
         setLoading(false);
       }
