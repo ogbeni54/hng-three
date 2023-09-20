@@ -1,0 +1,138 @@
+.mainet{
+    color: black;
+    /* height: 100vh; */
+}
+.major1 {
+    text-align: center;
+    background-color: black;
+}
+.mesh{
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+  .heady a{
+    text-decoration: none;
+    color: #e7a61a;
+    
+  }
+  
+  .heady {
+    font-size: 44px;
+    /* margin-bottom: 20px; */
+    color: #e7a61a;
+    font-weight: 800;
+    /* width: 40%; */
+    /* margin: 0px auto 40px; */
+    /* border: 2px dotted #e7a61a; */
+
+    
+   
+    border-radius: 10px;
+    
+  }
+  .search-container input{
+    padding: 10px 20px;
+    background-color: #e7a61a;
+    color: black;
+  }
+  .search-container input:focus{
+    color: black;
+    outline: none;
+    border: transparent;
+  }
+  
+  .conty {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    gap: 20px; /* Adjust the gap between images */
+    background-color: black;
+  }
+  
+  .img {
+    border: 2px solid black; /* Add a border around each image */
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    background-color: #e7a61a;
+    
+  }
+  .tag{
+    position: absolute;
+    bottom: 14px;
+    background-color: #e7a61a;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  
+  .img img {
+    max-width: 100%;
+    height: auto;
+    
+  }
+
+ 
+  
+  /* Keyframes for spinner animation */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+    @media (max-width: 811px) {
+        .heady {
+            width: 60%;
+        }
+    }
+  /* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .conty {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+      gap: 10px; /* Reduce the gap between images */
+    }
+    /* .heady {
+        width: 70%;
+        font-size: 34px;
+    } */
+    .heady{
+        font-size: 33px;
+    }
+    .search-container input{
+        padding: 10px 13px;
+    }
+  }
+  @media (max-width: 555px) {
+    .mesh{
+        width: 85%;
+    }
+    .heady{
+        font-size: 25px;
+    }
+    .search-container input{
+        padding: 10px;
+    }
+  }
+  /* Media query for screens smaller than 480px */
+  @media (max-width: 480px) {
+    .conty {
+      grid-template-columns: 1fr; /* One column for very small screens */
+    }
+  }
+
+  @media (max-width: 435px) {
+    .mesh{
+        width: 95%;
+        /* justify-content: space-between; */
+    }
+    .heady{
+        font-size: 17px;
+    }
+    .search-container input{
+        padding: 10px 0px;
+    }
+  }
+  
+  

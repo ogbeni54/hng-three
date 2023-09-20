@@ -1,0 +1,14 @@
+{
+    "pics": [
+      { "id": 1, "tag": "First", "src": "./Assets/aa.jpg"},
+      { "id": 2, "tag": "Second", "src": "./Assets/bb.jpg"},
+      { "id": 3, "tag": "Third", "src": "./Assets/cc.jpg"},
+      { "id": 4, "tag": "Fourth", "src": "./Assets/dd.jpg"},
+      { "id": 5, "tag": "Fifth", "src":"./Assets/Buloy Springs.jpg"},
+      { "id": 6, "tag": "Sixth", "src":"./Assets/Calagus Islands.jpg"},
+      { "id": 7, "tag": "Seventh", "src":"./Assets/Latik Riverside.jpg"},
+      { "id": 8, "tag": "Eighth", "src":"./Assets/Onay Beach.jpg"},
+      { "id": 9, "tag": "Nineth", "src":"./Assets/Seven Sisters Waterfall.jpg"},
+      { "id": 10, "tag": "Tenth", "src":"./Assets/rr.jpg"}
+    ]
+  }
