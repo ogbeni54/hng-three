@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import { signOut } from 'firebase/auth'; // Import 'signOut' from Firebase auth
+import { auth } from '../firebase/Config';
 import "./grid.css";
 
 const Grid = () => {
@@ -16,6 +18,7 @@ const Grid = () => {
     { id: 9, src: "./Assets/zz.jpg", tag: "Nine" },
   ]);
   const [searchTerm, setSearchTerm] = useState("");
+  const navigate = useNavigate();
 
   const onDragEnd = (result) => {
     if (!result.destination) {
@@ -31,6 +34,16 @@ const Grid = () => {
   const filteredImages = images.filter((image) =>
     image.tag.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  const handleLogout = async () => {
+    try {
+      await signOut(auth); // Log the user out using Firebase
+      navigate('/'); // Redirect the user to the home page or any other route
+    } catch (error) {
+      console.error('Logout error:', error.code, error.message);
+    }
+  };
+
 
   return (
     <div className="mainet">
@@ -82,6 +95,7 @@ const Grid = () => {
             )}
           </Droppable>
         </DragDropContext>
+        <button onClick={handleLogout} className="logout">Logout</button>
       </div>
     </div>
   );

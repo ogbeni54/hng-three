@@ -75,6 +75,17 @@
     
   }
 
+  .logout{
+    padding: 10px 20px;
+    background-color: #e7a61a;
+    color: black;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0px;
+    font-size: 20px;
+  }
+
  
   
   /* Keyframes for spinner animation */
