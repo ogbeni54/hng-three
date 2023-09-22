@@ -88,8 +88,7 @@ const Home = () => {
             </div>
             {loading ? (
               <div className="loading-spinner" aria-label="Logging in...">
-                {/* You can replace this with your loading animation */}
-                Loading...
+                
               </div>
             ) : null}
 
