@@ -1,11 +1,11 @@
 .mainet{
     color: black;
-    background-color: black;
+    /* background-color: black; */
     /* height: 100vh; */
 }
 .major1 {
     text-align: center;
-    background-color: black;
+    /* background-color: black; */
 }
 .mesh{
     width: 100%;
@@ -50,7 +50,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
     gap: 20px; /* Adjust the gap between images */
-    background-color: black;
+    /* background-color: black; */
   }
   
   .img {
