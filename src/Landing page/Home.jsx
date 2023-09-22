@@ -49,7 +49,8 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className='tata'>
+      <h1 className="tit">HNG TASK 3</h1>
       <div className="major">
         <div className="cont">
           <form onSubmit={formik.handleSubmit}>

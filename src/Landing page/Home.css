@@ -1,6 +1,15 @@
+.tata{
+    background-color: black;
+    padding: 20px 0px 0px;
+    height: 100vh;
+}
 .major{
     width: 100%;
+    
 
+}
+.tit{
+  color: #e7a61a;
 }
 .cont {
     width: 30%;
